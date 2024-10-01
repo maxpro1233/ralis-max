@@ -1,0 +1,38 @@
+[ 
+{
+    "title": "Людина-Павук 2",
+    "price":  2599,
+    "image": "img/2.png",
+    "description": "Цифрове видання Людина-Павук"
+},
+{
+    "title": "FIFA 24",
+    "price":  2399,
+    "image": "img/3.png",
+    "description": "EA SPORTS FC™ 24 - Цифрове видання PS4 та PS5"
+},
+{
+    "title": "Mortal Kombat™ 1",
+    "price":  2199,
+    "image": "img/4.png",
+    "description": "Цифрове видання Mortal Kombat™ 1"
+},
+{
+    "title": "Call of Duty®",
+    "price":  2449,
+    "image": "img/5.png",
+    "description": "Call of Duty®: Modern Warfare® III - набір «Два покоління»"
+},
+{
+    "title": "Grand Theft Auto Online",
+    "price":  449,
+    "image": "img/6.png",
+    "description": "Grand Theft Auto Online (PlayStation®5)"
+},
+{
+    "title": "Cyberpunk 2077",
+    "price":  2199,
+    "image": "img/7.png",
+    "description": "Cyberpunk 2077 Цифрове видання"
+}
+]
