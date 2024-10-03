@@ -1,19 +1,20 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
-    <title> Games Shop </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="registration.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Games shop - registration</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="registration.css">
 </head>
 
 <body>
-
     <header class="container fixed">
-        <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg ">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img class='logo' src='img/logo.png' height="50px"
                         alt='logo'></a>
@@ -25,7 +26,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class='nav-link' href='index.html#products'>Каталог</a>
+                            <a class='nav-link own-link-class' href='index.html#products'>Каталог</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href='index.html#about'>Про нас</a>
@@ -35,16 +36,17 @@
                             <a class="nav-link" href='#support' class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">Підтримка</a>
                         </li>
-                        <li class="nav-item"></li>
-                        <a class="nav-link" href=''>Відгуки</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href='index.html#recall'>Відгуки</a>
                         </li>
-                        <li class="nav-item"></li>
-                        <a class="nav-link" href=''>Контакти</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href='#contacts'>Контакти</a>
                         </li>
                     </ul>
                     <form id="searchForm" class="d-flex mx-auto" role="search">
                         <input class="form-control me-2" type="search" placeholder="Пошук" aria-label="Search">
-                        <button class="btn btn-outline-secondary btn-search" type="submit">Знайти</button>
+                        <button class="btn btn-outline-secondary btn-search btn-search-own-class"
+                            type="submit">Знайти</button>
                     </form>
                     <button class="cart-btn" id="cartBtn">
                         Кошик
@@ -67,49 +69,44 @@
             </div>
         </nav>
     </header>
+    <main class="container ">
 
-    <main>
         <section class="registration">
             <h2>Реєстрація</h2>
             <form class="registration-form" action="javascript:void(0)">
-              <div class="form-group mt-3">
-                <label for="username">Логін:</label>
-                <input class="form-control" type="text" id="username" name="username" required>
-              </div>
-      
-              <div class="form-group mt-3">
-                <label for="email">Електронна пошта:</label>
-                <input class="form-control" type="email" id="email" name="email" required placeholder="Макс топ">
-              </div>
-      
-              <div class="form-group mt-3">
-                <label for="password">Пароль:</label>
-                <input class="form-control" type="password" id="password" name="password" required>
-              </div>
-      
-              <div class="form-group mt-3">
-                <label for="confirmPassword">Підтвердження пароля:</label>
-                <input class="form-control" type="password" id="confirmPassword" name="confirmPassword" required>
-              </div>
-      
-              <!-- Порожній блок для повідомлення -->
-              <div id="passwordError" style="color: red; display: none;"></div>
-      
-              <div class="form-group mt-3">
-                <label for="phone">Номер телефону:</label>
-                <input class="form-control" type="tel" id="phone" name="phone" required>
-              </div>
-      
-              <button type="button" class="register-btn cart-btn margin-y mt-4">Зареєструватися</button>
-            </form>
-          </section>
+                <div class="form-group mt-3">
+                    <label for="username">Логін:</label>
+                    <input class="form-control" type="text" id="username" name="username" required>
+                </div>
 
-        <h2>Адреса </h2>
-        <p class="center-text">місто Київ, <br>вул. Незалежності, 34</p>
-        <p class="center-text">місто Харків,<br> вул. Сумська ,60</p>
-        <p class="center-text">місто Львів, <br> вул. Богдана Хмельницького, 14</p>
+                <div class="form-group mt-3">
+                    <label for="email">Електронна пошта:</label>
+                    <input class="form-control" type="email" id="email" name="email" required placeholder="Макс топ">
+                </div>
+
+                <div class="form-group mt-3">
+                    <label for="password">Пароль:</label>
+                    <input class="form-control" type="password" id="password" name="password" required>
+                </div>
+                
+                <div class="form-group mt-3">
+                    <label for="confirmPassword">Підтвердження пароля:</label>
+                    <input class="form-control" type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                
+                <div id="passwordError" style="color: red; display: none;">
+
+                    <div class="form-group mt-3">
+                        <label for="phone">Номер телефону:</label>
+                        <input class="form-control" type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <button type="button" class="register-btn cart-btn margin-y mt-4">Зареєструватися</button>
+            </form>
+        </section>
     </main>
-    <footer id="footer">
+    <footer>
+        <button id="themeToggle"><i class="bi bi-brightness-high"></i></button>
         <div class="phone">
             <p class="phone-number"> Номер телефону</p>
             <p class="phone-number">+380 95 342 49 37</p>
@@ -123,8 +120,10 @@
                 <img src="https://github.com/VikaKhaustova/Polous_Maxim/blob/main/folder/11.png?raw=true" />
             </div>
         </div>
+
+
     </footer>
-    <!-- Модальне вікно (з'являється при натисканні на "Підтримка") -->
+
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
         data-bs-theme="light">
         <div class="modal-dialog">
@@ -140,6 +139,7 @@
                             <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
                                 placeholder="Номер телефону" />
                         </div>
+
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -148,7 +148,6 @@
             </div>
         </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
